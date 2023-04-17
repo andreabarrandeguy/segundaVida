@@ -7,99 +7,117 @@ Rojo (239,111,108)
 Celeste (102,137,161)
 Amarillo (250,188,42)*/
 
+/*Base*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header {
-    height: 20vh;
-    width: 100vw;
+
+.headerSitio {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
+    grid-area: header;
+    display: flex;
+    align-items: center;
 }
-main {
+
+.mainFijo {
     height: 70vh;
-    width: 100vw;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
 }
-footer {
-    height: 10vh;
-    width: 100vw;
-    text-align: center;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 300;
+
+.footerSitio {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-h1 {
+
+hr {
+    margin: 0;
+    color: black;
+}
+
+/*Nav*/
+.itemsNavegacion ul li a {
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
 }
 
-/*Header*/
-.contenedorLogoEsquina {
-    display: inline-block;
-    width: 8vw;
-    padding-top: 1vh;
-    padding-left: 1vw;
-}
-.contenedorLogoEsquina:hover {
-    animation-name: fa-spin;
-    animation-delay: var(--fa-animation-delay, 0s);
-    animation-direction: var(--fa-animation-direction, reverse);
-    animation-duration: var(--fa-animation-duration, 1s);
-    animation-iteration-count: var(--fa-animation-iteration-count, 1);
-    animation-timing-function: var(--fa-animation-timing, linear);
-}
-.logoEsquina {
-    width: 100%;
-}
-.navegacion{
-    display: inline-block;
-    width: 88vw;
-    text-align: right;
-}
-.listaNavegacion {
-    list-style: none;
-    display: inline-block;
-    padding-left: 2rem;
-}
-.linkNavegacion {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
-    color: black;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-.linkNavegacion:visited {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
-    color: black;
-    text-decoration: none;
-}
-.linkNavegacion:hover {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
-    color: rgb(250,188,42);
-    text-decoration: none;
+.itemsNavegacion ul li a:hover {
+    color: rgb(250, 188, 42) !important;
 }
 
-/*Banner pagina index*/
-.banner {
-    background-image: url(../assets/img/main.png);
+/*Footer*/
+/*Footer*/
+.footerSitio__redes {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footerSitio__redes a {
+    height: 100%;
+}
+
+.instagram {
+    color: rgb(250, 188, 42);
+    padding: 0.5rem;
+}
+
+.instagram:hover {
+    opacity: 0.4;
+}
+
+.facebook {
+    color: rgb(102, 137, 161);
+    padding: 0.5rem;
+}
+
+.facebook:hover {
+    opacity: 0.4;
+}
+
+.tiktok {
+    color: rgb(239, 111, 108);
+    padding: 0.5rem;
+}
+
+.tiktok:hover {
+    opacity: 0.4;
+}
+
+.footerSitio__derechos {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.margin0 {
+    margin: 0;
+}
+
+/*Index*/
+.mainFijo__banner {
+    background-image: url(../assets/img/mainMobile.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     text-align: center;
-    height: 50vh;
+    height: 60%;
 }
-.logo {
+
+.mainFijo__banner__img {
     height: 100%;
     border-radius: 100%;
     backdrop-filter: blur(1px);
 }
-.logo:hover {
+
+.mainFijo__banner__img:hover {
     animation-name: fa-spin;
     animation-delay: var(--fa-animation-delay, 0s);
     animation-direction: var(--fa-animation-direction, reverse);
@@ -107,14 +125,29 @@ h1 {
     animation-iteration-count: var(--fa-animation-iteration-count, 1);
     animation-timing-function: var(--fa-animation-timing, linear);
 }
-.descripcionSitio {
-    height: 20vh;
-    padding-left: 3vw;
+
+.mainFijo__descripcion {
+    height: 40%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
-.santi { 
-    font-size: 3rem;
-    padding-top: 3vh;
+
+.mainFijo__descripcion__santi {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
 }
+
+.mainFijo__descripcion_texto {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
 .linkPagina {
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
@@ -122,107 +155,93 @@ h1 {
     text-decoration: none;
 }
 
-/*Footer*/
-.instagram {
-    color: rgb(250,188,42);
-    padding-top: 2vh;
-}
-.instagram:hover {
-    opacity: 0.4;
-}
-.facebook {
-    color: rgb(102,137,161);
-    padding-top: 2vh;
-    padding-left: 2vh;
-    padding-right: 2vh;
-}
-.facebook:hover {
-    opacity: 0.4;
-}
-.tiktok {
-    color: rgb(239,111,108);
-    padding-top: 2vh;
-}
-.tiktok:hover {
-    opacity: 0.4;
+.linkPagina:hover {
+    color: rgb(250, 188, 42);
 }
 
-/*PAGINAS*/
-/*Diseño Circular*/
+/*PAGINAS
+Diseño Circular*/
 .titulos {
-    color: rgb(102,137,161);
-    padding-left: 3vw;
-    padding-bottom: 2vh;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgb(102, 137, 161);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.seccionDisenoCircular {
+
+.negrita {
+    font-weight: 700;
+}
+
+.paginaSiguiente {
+    height: 10%;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.paginaSiguiente__texto {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.tarjetaDiseno {
+    border: none;
+}
+
+.tarjetaDiseno__texto {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
     text-align: center;
-    height: 50vh;
-}
-.textoDisenoCircular {
-    display: inline-block;
-    width: 40vw;
-    text-align: center;
-    font-size: 1.1rem;
-}
-.seccionImagenesDiseñoCircular {
-    display: inline-block;
-    width: 50vw;
-    text-align: center;
-}
-.imagenDisenoCircular {
-    display: inline-block;
-    width: 20vw;
-    text-align: center;
-}
-.linkSiguientePaginaRecomendada {
-    height: 13vh;
-    padding-left: 3vw;
-    padding-top: 4vh;
+    font-size: 1rem;
 }
 
 /*Procesos*/
-.procesos {
-    display: inline-block;
-    height: 35%;
+.mainProcesos {
+    display: flex;
+    justify-content: center;
+}
+.carousel-item {
+    height: 70vh;
 }
 
-/*Productos Terminados*/
-.seccionProductos {
-    text-align: center;
-}
-.productosTerminados {
-    display: inline-block;
-    width: 23%;
-    text-align: center;
-}
-.productosTerminados img {
-    width: 100%;
-    height: 55vh;
+.carousel-item img {
+    height: 100%;
     object-fit: cover;
-    border-radius: 10%;
-    box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
 }
-.productosTerminados:hover {
-    animation-name: fa-beat;
-    animation-delay: var(--fa-animation-delay, 0s);
-    animation-direction: var(--fa-animation-direction, normal);
-    animation-duration: var(--fa-animation-duration, 1s);
-    animation-iteration-count: var(--fa-animation-iteration-count, 1);
-    animation-timing-function: var(--fa-animation-timing, ease-in-out);
+
+/*Productos terminados*/
+.tarjeta {
+    border: none;
+}
+.tarjeta__titulo {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+.tarjeta__texto {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    text-align: center;
 }
 
 /*Contacto*/
-.paginaContacto {
-    text-align: center;
-}
-.formulario {
+.main__contacto__form {
     display: inline-block;
     text-align: center;
-    width: 40vw;
-    margin-top: 5vh;
+    width: 100%;
+    padding: 1rem;
 }
-.infoMensaje {
-    width: 20vw;
+.main__contacto__form__caja {
+    width: 100%;
     height: 5vh;
     border-style: solid;
     border-width: 1px;
@@ -231,8 +250,8 @@ h1 {
     font-weight: 500;
     font-size: 1.1rem;
 }
-.mensaje {
-    width: 20vw;
+.main__contacto__form__msj {
+    width: 100%;
     height: auto;
     margin-top: 3vh;
     font-family: 'Quicksand', sans-serif;
@@ -240,7 +259,7 @@ h1 {
     font-size: 1.1rem;
     border-color: #bbb;
 }
-.botonEnviar {
+.main__contacto__form__boton {
     background-color: rgb(250,188,42);
     color: white;
     border: none;
@@ -250,10 +269,73 @@ h1 {
     font-size: 1.5rem;
     cursor: pointer; 
 }
-.botonEnviar:hover {
+.main__contacto__form__boton:hover {
     background-color: rgb(239,111,108);
 }
-.mapa {
-    display: inline-block;
-    width: 50vw;
+.main__contacto__mapa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Media queries*/
+/*Tablets*/
+@media screen and (min-width: 768px) {
+    .mainFijo__banner {
+        height: 75%;
+    }
+
+    .mainFijo__descripcion {
+        height: 25%;
+    }
+
+    .footerSitio__redes {
+        width: 30%;
+    }
+
+    .titulos {
+        padding-left: 2rem;
+        justify-content: flex-start;
+    }
+
+    .mainFijo__section {
+        flex-direction: row;
+    }
+
+    .tarjetaDiseno__contimg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main__contacto__form__caja {
+        width: 50vw;
+    }
+    .main__contacto__form__msj {
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 989px) {
+    .card-group {
+        display: block;
+    }
+}
+/*Desktop*/
+@media screen and (min-width: 990px) {
+    .itemsNavegacion ul li {
+        padding: 1rem;
+    }
+
+    .tarjetaDiseno__contimg__img {
+        height: 500px;
+    }
+    .main__contacto__form__caja {
+        width: 20vw;
+    }
+    .main__contacto__form__msj {
+        width: 20vw;
+    }
+    .carousel {
+        width: 50%;
+    }
 }

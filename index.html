@@ -1,51 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilos.css">
     <script src="https://kit.fontawesome.com/858b52eeaa.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <title>Segunda Vida</title>
 </head>
+
 <body>
-    <!--HEADER con logo y enlaces de navegacion
-    Me gusto la idea de hacer que el logo gire en la direccion de las fechas, asi que cuando haces hover por el icono, gira
-    (use la animacion del pack de fontawesome, esta bien?)-->
-    <header class="header">
-        <div class="contenedorLogoEsquina">
-            <a href="#"><img class="logoEsquina" src="./assets/img/Logo.png" alt="logo"></a>
+    <header class="headerSitio container-fluid bg-white">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/img/Logo.png" alt="logoNav" width="75">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse itemsNavegacion" id="navbarNav">
+                        <ul class="navbar-nav w-100 justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/diseno_circular.html">Diseño Circular</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/procesos.html">Procesos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/productos_terminados.html">Productos Terminados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <nav class="navegacion">
-            <ul>
-                <li class="listaNavegacion"><a class="linkNavegacion" href="#">Inicio</a></li>
-                <li class="listaNavegacion"><a class="linkNavegacion" href="./pages/diseno_circular.html">Diseño Circular</a></li>
-                <li class="listaNavegacion"><a class="linkNavegacion" href="./pages/procesos.html">Procesos</a></li>
-                <li class="listaNavegacion"><a class="linkNavegacion" href="./pages/productos_terminados.html">Productos Terminados</a></li>
-                <li class="listaNavegacion"><a class="linkNavegacion" href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
-    <!--MAIN con un banner con el logo en el medio, que gira igual que el del icono superior izquierdo
-    Tanto en el index como en las demas paginas, hacia el final menciono alguna palabra clave (como "Diseño Circular", "Procesos", "Productos terminados") que considero ayuda al usuario en su visita y recorrido del sitio-->
-    <main>
-        <div class="banner">
-            <img src="./assets/img/Logo.png" alt="logo" class="logo">
+    <main class="mainFijo">
+        <div class="mainFijo__banner">
+            <img class="mainFijo__banner__img" src="./assets/img/Logo.png" alt="logoMain">
         </div>
-        <div class="descripcionSitio">
-        <h1 class="santi">Hola, soy Santi</h1>
-        <h2>Rescato y restauro muebles y objetos antiguos. Hay gente que lo llama <a class="linkPagina" href="./pages/diseno_circular.html">Diseño Circular</a></h2>
+        <div class="mainFijo__descripcion">
+            <h1 class="mainFijo__descripcion__santi">Hola, soy Santi</h1>
+            <h2 class="mainFijo__descripcion_texto">Rescato y restauro muebles y objetos antiguos. Hay gente que lo
+                llama <a class="linkPagina" href="./pages/diseno_circular.html">Diseño Circular</a></h2>
         </div>
     </main>
-    <!--FOOTER con redes sociales, tambien use animacion de fontawesome -->
-    <footer>
-        <hr>
-        <div>
-            <a href="https://www.instagram.com/segundavida.objetos/" target="_blank"><i class="fa-brands fa-instagram fa-2x instagram"></i></a>
-            <a href="https://www.facebook.com/santi.dangelo.12/" target="_blank"><i class="fa-brands fa-facebook fa-2x facebook"></i></a>
-            <a href="https://www.tiktok.com/@segundavida.objetos" target="_blank"><i class="fa-brands fa-tiktok fa-2x tiktok"></i></a>
+    <hr>
+    <footer class="footerSitio">
+        <div class="footerSitio__redes">
+            <a href="https://www.instagram.com/segundavida.objetos/" target="_blank"><i
+                    class="fa-brands fa-instagram fa-2x instagram"></i></a>
+            <a href="https://www.facebook.com/santi.dangelo.12/" target="_blank"><i
+                    class="fa-brands fa-facebook fa-2x facebook"></i></a>
+            <a href="https://www.tiktok.com/@segundavida.objetos" target="_blank"><i
+                    class="fa-brands fa-tiktok fa-2x tiktok"></i></a>
         </div>
-        <p>Todos los derechos reservados© - <a href="https://www.linkedin.com/in/andrea-barrandeguy/" target="_blank">Andrea Barrandeguy</a></p>
+        <div class="footerSitio__derechos">
+            <p class="margin0">Todos los derechos reservados© -</p> 
+            <a href="https://www.linkedin.com/in/andrea-barrandeguy/" target="_blank">Andrea Barrandeguy</a>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

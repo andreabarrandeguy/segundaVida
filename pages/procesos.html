@@ -1,55 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/858b52eeaa.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
     <title>Procesos</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="contenedorLogoEsquina">
-            <a href="../index.html"><img class="logoEsquina" src="../assets/img/Logo.png" alt="logo"></a>
+    <header class="headerSitio container-fluid bg-white">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../assets/img/Logo.png" alt="logoNav" width="75">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse itemsNavegacion" id="navbarNav">
+                        <ul class="navbar-nav w-100 justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./diseno_circular.html">Diseño Circular</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Procesos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./productos_terminados.html">Productos Terminados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <nav class="navegacion">
-            <ul>
-                <li class="listaNavegacion"><a class="linkNavegacion" href="../index.html">Inicio</a></li>
-                <li class="listaNavegacion"><a class="linkNavegacion" href="./diseno_circular.html">Diseño Circular</a></li>
-                <li class="listaNavegacion"><a class="linkNavegacion" href="#">Procesos</a></li>
-                <li class="listaNavegacion"><a class="linkNavegacion" href="./productos_terminados.html">Productos Terminados</a></li>
-                <li class="listaNavegacion"><a class="linkNavegacion" href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
-    <main>
-        <h1 class="titulos">Algunos de mis procesos</h1>
-        <!--Me dedique a cargar las imagenes pero no quise estar mucho tiempo organizandolas porque supongo que con Flexbox va a ser mas facil
-        Me imaginaba una galeria que ocupe toda la seccion, incluso quizas pueda agregar videos-->
-        <img src="../assets/img/procesos/1.jpg" alt="" class="procesos">
-        <img src="../assets/img/procesos/2.jpg" alt="" class="procesos">
-        <img src="../assets/img/procesos/3.jpg" alt="" class="procesos">
-        <img src="../assets/img/procesos/4.jpg" alt="" class="procesos">
-        <img src="../assets/img/procesos/5.jpg" alt="" class="procesos">
-        <img src="../assets/img/procesos/6.jpg" alt="" class="procesos">
-        <img src="../assets/img/procesos/7.jpg" alt="" class="procesos">
-        <img src="../assets/img/procesos/8.jpg" alt="" class="procesos">
-        <img src="../assets/img/procesos/9.jpg" alt="" class="procesos">
-        <img src="../assets/img/procesos/10.jpg" alt="" class="procesos">
-        <img src="../assets/img/procesos/11.jpg" alt="" class="procesos">
-        <div class="linkSiguientePaginaRecomendada">
-        <h2>¿Y los <a class="linkPagina" href="./productos_terminados.html">productos terminados</a>?</h2>
+    <main class="container-fluid mainProcesos">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                    aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+                    aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"
+                    aria-label="Slide 10"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/img/procesos/1.jpg" class="d-block w-100" alt="procesos1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/procesos/2.jpg" class="d-block w-100" alt="procesos2">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/procesos/3.jpg" class="d-block w-100" alt="procesos3">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/procesos/4.jpg" class="d-block w-100" alt="procesos4">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/procesos/5.jpg" class="d-block w-100" alt="procesos5">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/procesos/6.jpg" class="d-block w-100" alt="procesos6">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/procesos/7.jpg" class="d-block w-100" alt="procesos7">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/procesos/8.jpg" class="d-block w-100" alt="procesos8">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/procesos/9.jpg" class="d-block w-100" alt="procesos9">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/procesos/10.jpg" class="d-block w-100" alt="procesos10">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+
     </main>
-    <footer>
-        <hr>
-        <div>
-            <a href="https://www.instagram.com/segundavida.objetos/" target="_blank"><i class="fa-brands fa-instagram fa-2x instagram"></i></a>
-            <a href="https://www.facebook.com/santi.dangelo.12/" target="_blank"><i class="fa-brands fa-facebook fa-2x facebook"></i></a>
-            <a href="https://www.tiktok.com/@segundavida.objetos" target="_blank"><i class="fa-brands fa-tiktok fa-2x tiktok"></i></a>
+    <footer class="footerSitio">
+        <div class="footerSitio__redes">
+            <a href="https://www.instagram.com/segundavida.objetos/" target="_blank"><i
+                    class="fa-brands fa-instagram fa-2x instagram"></i></a>
+            <a href="https://www.facebook.com/santi.dangelo.12/" target="_blank"><i
+                    class="fa-brands fa-facebook fa-2x facebook"></i></a>
+            <a href="https://www.tiktok.com/@segundavida.objetos" target="_blank"><i
+                    class="fa-brands fa-tiktok fa-2x tiktok"></i></a>
         </div>
-        <p>Todos los derechos reservados© - <a href="https://www.linkedin.com/in/andrea-barrandeguy/" target="_blank">Andrea Barrandeguy</a></p>
+        <div class="footerSitio__derechos">
+            <p class="margin0">Todos los derechos reservados© -</p>
+            <a href="https://www.linkedin.com/in/andrea-barrandeguy/" target="_blank">Andrea Barrandeguy</a>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
