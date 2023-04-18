@@ -17,17 +17,16 @@ Amarillo (250,188,42)*/
 .headerSitio {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
-    grid-area: header;
     display: flex;
     align-items: center;
 }
 
 .mainFijo {
-    height: 70vh;
+    height: 75vh;
 }
 
 .footerSitio {
-    height: 15vh;
+    height: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,6 +36,7 @@ Amarillo (250,188,42)*/
 hr {
     margin: 0;
     color: black;
+    opacity: 0.2;
 }
 
 /*Nav*/
@@ -96,8 +96,9 @@ hr {
     justify-content: center;
 }
 
-.margin0 {
+.footerSitio__derechos__texto {
     margin: 0;
+    padding-right: 0.5rem;
 }
 
 /*Index*/
@@ -172,6 +173,7 @@ Diseño Circular*/
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .negrita {
@@ -193,11 +195,7 @@ Diseño Circular*/
     font-size: 1.5rem;
 }
 
-.tarjetaDiseno {
-    border: none;
-}
-
-.tarjetaDiseno__texto {
+.containerDiseno__texto {
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
     text-align: center;
@@ -288,7 +286,9 @@ Diseño Circular*/
     .mainFijo__descripcion {
         height: 25%;
     }
-
+    .footerSitio__derechos {
+        gap: 0.5rem;
+    }
     .footerSitio__redes {
         width: 30%;
     }
@@ -301,11 +301,11 @@ Diseño Circular*/
     .mainFijo__section {
         flex-direction: row;
     }
-
-    .tarjetaDiseno__contimg {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .mainFijoTablet {
+        height: 75vh;
+    }
+    .containerDiseno {
+        height: 50vh;
     }
     .main__contacto__form__caja {
         width: 50vw;
@@ -322,11 +322,20 @@ Diseño Circular*/
 }
 /*Desktop*/
 @media screen and (min-width: 990px) {
+    .mainFijoDesktop {
+        height: 75vh;
+        display: flex;
+        align-items: center;
+    }
     .itemsNavegacion ul li {
         padding: 1rem;
     }
-
-    .tarjetaDiseno__contimg__img {
+    .containerDiseno__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .containerDiseno__img__img {
         height: 500px;
     }
     .main__contacto__form__caja {
