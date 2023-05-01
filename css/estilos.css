@@ -21,22 +21,22 @@ Amarillo (250,188,42)*/
     align-items: center;
 }
 
+.headerSitio__logo {
+    width: 75px;
+}
+
 .mainFijo {
     height: 75vh;
 }
 
 .footerSitio {
-    height: 10vh;
+    /*height: 10vh;*/
+    border-top: 1px gray solid;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-
-hr {
-    margin: 0;
-    color: black;
-    opacity: 0.2;
+    justify-content: flex-end;
+    padding-top: 1rem;
 }
 
 /*Nav*/
@@ -176,6 +176,20 @@ Diseño Circular*/
     text-align: center;
 }
 
+.containerDiseno__textos {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.containerDiseno__texto {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
 .negrita {
     font-weight: 700;
 }
@@ -195,17 +209,11 @@ Diseño Circular*/
     font-size: 1.5rem;
 }
 
-.containerDiseno__texto {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-    text-align: center;
-    font-size: 1rem;
-}
-
 /*Procesos*/
 .mainProcesos {
     display: flex;
     justify-content: center;
+    padding-bottom: 1rem;
 }
 .carousel-item {
     height: 70vh;
@@ -217,6 +225,10 @@ Diseño Circular*/
 }
 
 /*Productos terminados*/
+.mainFijoDesktop {
+    padding-bottom: 1rem;
+}
+
 .tarjeta {
     border: none;
 }
@@ -224,6 +236,7 @@ Diseño Circular*/
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
     text-align: center;
+    font-size: 1.5rem;
 }
 .tarjeta__texto {
     font-family: 'Quicksand', sans-serif;
@@ -313,6 +326,9 @@ Diseño Circular*/
     .main__contacto__form__msj {
         width: 50vw;
     }
+    .mainDiseno {
+        display: flex;
+    }
 }
 
 @media screen and (min-width: 577px) and (max-width: 989px) {
@@ -346,5 +362,9 @@ Diseño Circular*/
     }
     .carousel {
         width: 50%;
+    }
+
+    .mainDiseno__imagenes {
+        display: flex;
     }
 }
