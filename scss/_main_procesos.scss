@@ -1,0 +1,24 @@
+.mainProcesos {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+
+    .carousel-item {
+        height: 70vh;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+/*Media Queries*/
+/*Desktop*/
+@media screen and (min-width: 990px) {
+    .mainProcesos {
+        .carousel {
+            width: 50%;
+        }
+    }
+}

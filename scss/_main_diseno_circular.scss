@@ -1,0 +1,38 @@
+.containerDiseno {
+    .containerDiseno__textos {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+
+        .containerDiseno__texto {
+            font-family: $fuente;
+            font-weight: map-get($tamanos-fuente, medium);
+            text-align: center;
+            font-size: 1rem;
+            padding: 1rem;
+        }
+    }
+}
+
+/*Media Queries*/
+/*Tablets*/
+@media screen and (min-width: 768px) {
+    .containerDiseno {
+        height: 50vh;
+    }
+}
+
+/*Desktop*/
+@media screen and (min-width: 990px) {
+    .containerDiseno {
+        .containerDiseno__img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .containerDiseno__img__img {
+                height: 500px;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.headerSitio {
+    font-family: $fuente;
+    font-weight: map-get($tamanos-fuente, medium);
+    display: flex;
+    align-items: center;
+
+    .headerSitio__logo {
+        width: 75px;
+    }
+
+    .itemsNavegacion ul li a {
+        font-family: $fuente;
+        font-weight: map-get($tamanos-fuente, bold);
+    }
+
+    .itemsNavegacion ul li a:hover {
+        color: map-get($colores, amarillo) !important;
+    }
+}
+
+/*Media Queries*/
+/*Desktop*/
+@media screen and (min-width: 990px) {
+    .headerSitio {
+        .itemsNavegacion ul li {
+            padding: 1rem;
+        }
+    }
+}

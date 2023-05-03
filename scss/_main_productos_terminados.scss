@@ -1,0 +1,23 @@
+.tarjeta {
+    border: none;
+
+    .tarjeta__titulo {
+        font-family: $fuente;
+        font-weight: map-get($tamanos-fuente, bold);
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .tarjeta__texto {
+        font-family: $fuente;
+        font-weight: map-get($tamanos-fuente, medium);
+        text-align: center;
+    }
+}
+
+/*Media Queries*/
+@media screen and (min-width: 577px) and (max-width: 989px) {
+    .card-group {
+        display: block;
+    }
+}

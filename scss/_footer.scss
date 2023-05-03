@@ -1,0 +1,72 @@
+.footerSitio {
+    border-top: 1px gray solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 1rem;
+
+    .footerSitio__redes {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+
+        a {
+            height: 100%;
+
+            .instagram {
+                padding: 0.5rem;
+                color: map-get($colores, amarillo);
+
+                &:hover {
+                    opacity: 0.4;
+                }
+            }
+
+            .facebook {
+                @extend .instagram;
+                color: map-get($colores, celeste);
+
+                &:hover {
+                    opacity: 0.4;
+                }
+            }
+
+            .tiktok {
+                @extend .instagram;
+                color: map-get($colores, rojo);
+
+                &:hover {
+                    opacity: 0.4;
+                }
+            }
+        }
+    }
+
+    .footerSitio__derechos {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        .footerSitio__derechos__texto {
+            margin: 0;
+            padding-right: 0.5rem;
+        }
+    }
+}
+
+/*Media Queries*/
+/*Tablets y mas*/
+@media screen and (min-width: 768px) {
+    .footerSitio {
+        .footerSitio__redes {
+            width: 30%;
+        }
+
+        .footerSitio__derechos {
+            gap: 0.5rem;
+        }
+    }
+}
