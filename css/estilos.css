@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -62,12 +61,10 @@
     padding-left: 2rem;
     justify-content: flex-start;
   }
-
   .mainFijoTablet {
     height: 75vh;
   }
 }
-
 /*Desktop*/
 @media screen and (min-width: 990px) {
   .mainFijoDesktop {
@@ -76,23 +73,19 @@
     align-items: center;
   }
 }
-
 .headerSitio {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
   display: flex;
   align-items: center;
 }
-
 .headerSitio .headerSitio__logo {
   width: 75px;
 }
-
 .headerSitio .itemsNavegacion ul li a {
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
 }
-
 .headerSitio .itemsNavegacion ul li a:hover {
   color: rgb(250, 188, 42) !important;
 }
@@ -104,13 +97,11 @@
     padding: 1rem;
   }
 }
-
 .mainFijo {
   height: 75vh;
 }
-
 .mainFijo .mainFijo__banner {
-  background-image: url(../assets/img/mainMobile.png);
+  background-image: url(../assets/img/landing/mainMobile.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -118,13 +109,11 @@
   text-align: center;
   height: 60%;
 }
-
 .mainFijo .mainFijo__banner .mainFijo__banner__img {
   height: 100%;
   border-radius: 100%;
   backdrop-filter: blur(1px);
 }
-
 .mainFijo .mainFijo__banner .mainFijo__banner__img:hover {
   animation-name: fa-spin;
   animation-delay: var(--fa-animation-delay, 0s);
@@ -133,7 +122,6 @@
   animation-iteration-count: var(--fa-animation-iteration-count, 1);
   animation-timing-function: var(--fa-animation-timing, linear);
 }
-
 .mainFijo .mainFijo__descripcion {
   height: 40%;
   padding-left: 2rem;
@@ -143,13 +131,11 @@
   align-items: flex-start;
   justify-content: center;
 }
-
 .mainFijo .mainFijo__descripcion .mainFijo__descripcion__santi {
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
   font-size: 2rem;
 }
-
 .mainFijo .mainFijo__descripcion .mainFijo__descripcion_texto {
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
@@ -160,20 +146,23 @@
 /*Tablets y mas*/
 @media screen and (min-width: 768px) {
   .mainFijo .mainFijo__banner {
+    background-image: url(../assets/img/landing/main.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
     height: 75%;
   }
-
   .mainFijo .mainFijo__descripcion {
     height: 25%;
   }
 }
-
 .containerDiseno .containerDiseno__textos {
   display: flex;
   flex-direction: column;
   padding: 2rem;
 }
-
 .containerDiseno .containerDiseno__textos .containerDiseno__texto {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
@@ -189,7 +178,6 @@
     height: 50vh;
   }
 }
-
 /*Desktop*/
 @media screen and (min-width: 990px) {
   .containerDiseno .containerDiseno__img {
@@ -197,22 +185,18 @@
     align-items: center;
     justify-content: center;
   }
-
   .containerDiseno .containerDiseno__img .containerDiseno__img__img {
     height: 500px;
   }
 }
-
 .mainProcesos {
   display: flex;
   justify-content: center;
   padding-bottom: 1rem;
 }
-
 .mainProcesos .carousel-item {
   height: 70vh;
 }
-
 .mainProcesos .carousel-item img {
   height: 100%;
   object-fit: cover;
@@ -225,18 +209,15 @@
     width: 50%;
   }
 }
-
 .tarjeta {
   border: none;
 }
-
 .tarjeta .tarjeta__titulo {
   font-family: "Quicksand", sans-serif;
   font-weight: 700;
   text-align: center;
   font-size: 1.5rem;
 }
-
 .tarjeta .tarjeta__texto {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
@@ -249,14 +230,12 @@
     display: block;
   }
 }
-
 .main__contacto__form {
   display: inline-block;
   text-align: center;
   width: 100%;
   padding: 1rem;
 }
-
 .main__contacto__form .main__contacto__form__caja {
   width: 100%;
   height: 5vh;
@@ -267,7 +246,6 @@
   font-weight: 500;
   font-size: 1.1rem;
 }
-
 .main__contacto__form .main__contacto__form__msj {
   width: 100%;
   height: auto;
@@ -277,7 +255,6 @@
   font-size: 1.1rem;
   border-color: #bbb;
 }
-
 .main__contacto__form .main__contacto__form__boton {
   background-color: rgb(250, 188, 42);
   color: white;
@@ -288,7 +265,6 @@
   font-size: 1.5rem;
   cursor: pointer;
 }
-
 .main__contacto__form .main__contacto__form__boton:hover {
   background-color: rgb(239, 111, 108);
 }
@@ -305,23 +281,19 @@
   .main__contacto__form .main__contacto__form__caja {
     width: 50vw;
   }
-
   .main__contacto__form .main__contacto__form__msj {
     width: 50vw;
   }
 }
-
 /*Desktop*/
 @media screen and (min-width: 990px) {
   .main__contacto__form .main__contacto__form__caja {
     width: 20vw;
   }
-
   .main__contacto__form .main__contacto__form__msj {
     width: 20vw;
   }
 }
-
 .footerSitio {
   border-top: 1px gray solid;
   display: flex;
@@ -330,46 +302,33 @@
   justify-content: flex-end;
   padding-top: 1rem;
 }
-
 .footerSitio .footerSitio__redes {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
 }
-
 .footerSitio .footerSitio__redes a {
   height: 100%;
 }
-
-.footerSitio .footerSitio__redes a .instagram,
-.footerSitio .footerSitio__redes a .tiktok,
-.footerSitio .footerSitio__redes a .facebook {
+.footerSitio .footerSitio__redes a .instagram, .footerSitio .footerSitio__redes a .tiktok, .footerSitio .footerSitio__redes a .facebook {
   padding: 0.5rem;
   color: rgb(250, 188, 42);
 }
-
-.footerSitio .footerSitio__redes a .instagram:hover,
-.footerSitio .footerSitio__redes a .tiktok:hover,
-.footerSitio .footerSitio__redes a .facebook:hover {
+.footerSitio .footerSitio__redes a .instagram:hover, .footerSitio .footerSitio__redes a .tiktok:hover, .footerSitio .footerSitio__redes a .facebook:hover {
   opacity: 0.4;
 }
-
 .footerSitio .footerSitio__redes a .facebook {
   color: rgb(102, 137, 161);
 }
-
 .footerSitio .footerSitio__redes a .facebook:hover {
   opacity: 0.4;
 }
-
 .footerSitio .footerSitio__redes a .tiktok {
   color: rgb(239, 111, 108);
 }
-
 .footerSitio .footerSitio__redes a .tiktok:hover {
   opacity: 0.4;
 }
-
 .footerSitio .footerSitio__derechos {
   margin: 0;
   display: flex;
@@ -377,7 +336,6 @@
   align-items: center;
   justify-content: center;
 }
-
 .footerSitio .footerSitio__derechos .footerSitio__derechos__texto {
   margin: 0;
   padding-right: 0.5rem;
@@ -389,7 +347,6 @@
   .footerSitio .footerSitio__redes {
     width: 30%;
   }
-
   .footerSitio .footerSitio__derechos {
     gap: 0.5rem;
   }

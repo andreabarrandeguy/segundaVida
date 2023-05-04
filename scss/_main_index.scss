@@ -2,7 +2,7 @@
     height: 75vh;
 
     .mainFijo__banner {
-        background-image: url(../assets/img/mainMobile.png);
+        background-image: url(../assets/img/landing/mainMobile.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -54,6 +54,12 @@
 @media screen and (min-width: 768px) {
     .mainFijo {
         .mainFijo__banner {
+            background-image: url(../assets/img/landing/main.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
             height: 75%;
         }
 
