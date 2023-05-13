@@ -30,10 +30,8 @@
         height: 40%;
         padding-left: 2rem;
         padding-right: 2rem;
-        display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
+        @include flex-align-justify (flex-start,center);
 
         .mainFijo__descripcion__santi {
             font-family: $fuente;

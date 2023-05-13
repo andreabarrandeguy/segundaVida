@@ -13,8 +13,8 @@
         font-weight: map-get($tamanos-fuente, bold);
     }
 
-    .itemsNavegacion ul li a:hover {
-        color: map-get($colores, amarillo) !important;
+    .itemsNavegacion .navbar-nav .nav-link:hover {
+        color: map-get($colores, amarillo);
     }
 }
 

@@ -10,10 +10,8 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     height: 15%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
+    @include flex-align-justify (center,center)
 }
 
 .paginaSiguiente {

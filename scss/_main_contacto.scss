@@ -42,9 +42,7 @@
 }
 
 .main__contacto__mapa {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-align-justify (center,center);
 }
 
 /*Media Queries*/

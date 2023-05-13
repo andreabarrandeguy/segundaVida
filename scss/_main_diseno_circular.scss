@@ -26,9 +26,7 @@
 @media screen and (min-width: 990px) {
     .containerDiseno {
         .containerDiseno__img {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex-align-justify (center,center);
 
             .containerDiseno__img__img {
                 height: 500px;
