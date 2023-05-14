@@ -1,0 +1,56 @@
+.main404 {
+    background-image: url(../assets/img/procesos/9.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    @include flex-align-justify (center,center);
+    flex-direction: column;
+
+    .main404__texto {
+        background-color: rgba(243, 241, 241, 0.406);
+        backdrop-filter: blur(12px);
+        width: 75%;
+        @include flex-align-justify (center,center);
+        flex-direction: column;
+
+        .main404__texto__titulo {
+            font-family: $fuente;
+            font-weight: map-get($tamanos-fuente, bold);
+            font-size: 3rem;
+            color: map-get($colores, celeste);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            height: 15%;
+            text-align: center;
+            @include flex-align-justify (center,center)
+        }
+
+        .main404__texto__subtitulo {
+            font-family: $fuente;
+            font-weight: map-get($tamanos-fuente, medium);
+            text-align: center;
+            padding: 1rem;
+        }
+    }
+
+    .main404__boton {
+        padding-top: 2rem;
+
+        .main404__boton__formato {
+            background-color: map-get($colores, rojo);
+            color: white;
+            text-decoration: none;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 1vh;
+            border-radius: 5px;
+            font-size: 1.5rem;
+            cursor: pointer;
+    
+            &:hover {
+                background-color: map-get($colores, amarillo);
+            }
+        }
+    }
+}
